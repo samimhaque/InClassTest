@@ -4,7 +4,7 @@ import org.junit.Test;
 
 public class EmployeeTest {
     @Test
-    public static void main(String args[]) {
+    public void Employee() {
         /* Create two objects using constructor */
         Employee employee1 = new Employee("Mr","Jone",17,"1334568f",
                 "123456789","Part-Time");
