@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="ie.gmit.TestEmploye" time="0.007" errors="1" skipped="0">
+<testsuite tests="1" failures="0" name="ie.gmit.EmployeeTest" time="0.008" errors="1" skipped="0">
   <properties>
     <property name="idea.version" value="2021.2.1"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -59,10 +59,10 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="ie.gmit.TestEmploye" name="initializationError" time="0.007">
-    <error message="Invalid test class &apos;ie.gmit.TestEmploye&apos;:
+  <testcase classname="ie.gmit.EmployeeTest" name="initializationError" time="0.008">
+    <error message="Invalid test class &apos;ie.gmit.EmployeeTest&apos;:
   1. Method main() should not be static
-  2. Method main should have no parameters" type="org.junit.runners.model.InvalidTestClassError">org.junit.runners.model.InvalidTestClassError: Invalid test class &apos;ie.gmit.TestEmploye&apos;:
+  2. Method main should have no parameters" type="org.junit.runners.model.InvalidTestClassError">org.junit.runners.model.InvalidTestClassError: Invalid test class &apos;ie.gmit.EmployeeTest&apos;:
   1. Method main() should not be static
   2. Method main should have no parameters
 	at org.junit.runners.ParentRunner.validate(ParentRunner.java:525)

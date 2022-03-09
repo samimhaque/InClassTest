@@ -1,9 +1,9 @@
 -------------------------------------------------------------------------------
-Test set: ie.gmit.TestEmploye
+Test set: ie.gmit.EmployeeTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.084 sec <<< FAILURE!
-initializationError(ie.gmit.TestEmploye)  Time elapsed: 0.007 sec  <<< ERROR!
-org.junit.runners.model.InvalidTestClassError: Invalid test class 'ie.gmit.TestEmploye':
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.086 sec <<< FAILURE!
+initializationError(ie.gmit.EmployeeTest)  Time elapsed: 0.008 sec  <<< ERROR!
+org.junit.runners.model.InvalidTestClassError: Invalid test class 'ie.gmit.EmployeeTest':
   1. Method main() should not be static
   2. Method main should have no parameters
 	at org.junit.runners.ParentRunner.validate(ParentRunner.java:525)

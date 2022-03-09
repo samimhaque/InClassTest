@@ -1,35 +1,48 @@
 package ie.gmit;
-
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 public class Employee {
 
     String title;
     String name;
     int age;
     String PPS;
-    long phone;
+    String phone;
     String EmploymentType;
-    public Employee(String title, String name, int age,String PPS,long phone,String employmentType) {
+    String regex = "\\d{10}";
+
+    public Employee(String title, String name, int age,String PPS,String phone,String employmentType) {
         this.title = title;
-        if (name.length() > 3)
-        {
-            if (name.length()<25)
-            {
+        if (name.length() > 3 && name.length() > 26) {
                 this.name = name;
-            }
+        }else {
+            System.out.println("Given Name is not valid");
         }
-        if (PPS.length()==8)
-            this.PPS  = PPS;
-        int lgth = String.valueOf(phone).length();
-        if (lgth==9){
-            this.phone=phone;
+
+        if (PPS.length() == 8){
+            this.PPS = PPS;
+        }else {
+            System.out.println("Given PPS number is valid");
         }
-        this.EmploymentType=employmentType;
-        if (age > 15)
+        Pattern pattern = Pattern.compile(regex);
+        //Creating a Matcher object
+        Matcher matcher = pattern.matcher(phone);
+        //Verifying whether given phone number is valid
+        if (matcher.matches()) {
+            this.phone = phone;
+            System.out.println("Given phone number is valid");
+        } else {
+            System.out.println("Given phone number is not valid");
+        }
+        this.EmploymentType = employmentType;
+
+        if (age > 15) {
             this.age = age;
-
+        }else {
+            System.out.println("Given Age is not valid");
+        }
     }
-
-    public String getTitle() {
+      public String getTitle() {
         return title;
     }
 
@@ -61,11 +74,11 @@ public class Employee {
         this.PPS = PPS;
     }
 
-    public long getPhone() {
+    public String getPhone() {
         return phone;
     }
 
-    public void setPhone(int phone) {
+    public void setPhone(String phone) {
         this.phone = phone;
     }
 
