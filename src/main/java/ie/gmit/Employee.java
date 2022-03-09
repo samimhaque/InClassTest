@@ -15,14 +15,10 @@ public class Employee {
         this.title = title;
         if (name.length() > 3 && name.length() > 26) {
                 this.name = name;
-        }else {
-            System.out.println("Given Name is not valid");
         }
 
         if (PPS.length() == 8){
             this.PPS = PPS;
-        }else {
-            System.out.println("Given PPS number is valid");
         }
         Pattern pattern = Pattern.compile(regex);
         //Creating a Matcher object
@@ -30,16 +26,11 @@ public class Employee {
         //Verifying whether given phone number is valid
         if (matcher.matches()) {
             this.phone = phone;
-            System.out.println("Given phone number is valid");
-        } else {
-            System.out.println("Given phone number is not valid");
         }
         this.EmploymentType = employmentType;
 
         if (age > 15) {
             this.age = age;
-        }else {
-            System.out.println("Given Age is not valid");
         }
     }
       public String getTitle() {
